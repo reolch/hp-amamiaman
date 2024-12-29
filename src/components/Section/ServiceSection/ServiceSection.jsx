@@ -20,25 +20,25 @@ const services = [
     icon: 'snorkelling',
     name: 'シュノーケリング',
     description: '美しいサンゴ礁の海でシュノーケリングを楽しめます。',
-    link: '/snorkelling',
+    link: 'hp-amamiaman/snorkelling',
   },
   {
     icon: 'seakayak',
     name: 'シーカヤック',
     description: 'シーカヤックで海を探索し、新たな発見を。',
-    link: '/seakayak',
+    link: 'hp-amamiaman/seakayak',
   },
   {
     icon: 'glassboat',
     name: 'グラスボート',
     description: 'グラスボートで海底の世界を覗いてみませんか？',
-    link: '/glassboat',
+    link: 'hp-amamiaman/glassboat',
   },
   {
     icon: 'lodging',
     name: '民宿',
     description: 'ゆったりと過ごせる快適な民宿をご用意しています。',
-    link: '/lodging',
+    link: 'hp-amamiaman/lodging',
   },
 ];
 
