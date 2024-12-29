@@ -81,11 +81,11 @@
 }
 
 /* ナビゲーションメニューリスト */
-.navList {
+.navList,
+.dropdownMenu {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
 .navItem {
@@ -171,127 +171,84 @@
   }
 }
 
-/* ドロップダウンメニューのスタイル改善 */
+/* ドロップダウンコンテナ */
 .dropdownContainer {
   position: relative;
 }
 
+/* ドロップダウンボタン（Link） */
 .dropdownButton {
-  background: none;
-  border: none;
+  width: 100%;
+  text-decoration: none;
   color: var(--text-color);
   font-size: 1rem;
-  cursor: pointer;
-  padding: 0.8rem 1rem;
+  padding: 1rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s ease;
   white-space: nowrap;
   font-family: inherit;
   font-weight: inherit;
+  border-bottom: 2px solid transparent;
 }
 
-.dropdownButton:hover {
-  color: var(--accent-color);
-}
-
+/* ドロップダウンメニュー（モバイル） */
 .dropdownMenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  border-radius: 12px;
-  padding: 8px 0;
-  min-width: 200px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
+  position: static;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 0.5rem 1rem;
+  border-radius: 8px;
+  display: none;
 }
 
 .dropdownMenu.show {
-  opacity: 1;
-  visibility: visible;
+  display: block;
 }
 
+/* ドロップダウンリンク */
 .dropdownLink {
   display: block;
-  padding: 12px 20px;
+  padding: 0.8rem 1rem;
   color: var(--text-color);
   text-decoration: none;
+  text-align: center;
   transition: all 0.2s ease;
-  font-size: 0.95rem;
-  position: relative;
 }
 
-.dropdownLink:hover {
+.dropdownLink:hover,
+.dropdownLink:focus {
   color: var(--accent-color);
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-.dropdownLink::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
-.dropdownLink:last-child::after {
-  display: none;
-}
-
-/* モバイル対応の改善 */
-@media (max-width: 768px) {
-  .dropdownMenu {
-    position: static;
-    box-shadow: none;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.02);
-    border-radius: 8px;
-    margin: 8px 16px;
-    padding: 4px 0;
-  }
-
-  .dropdownMenu.show {
-    display: block;
-  }
-
-  .dropdownButton {
-    width: 100%;
-    justify-content: center;
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .dropdownLink {
-    padding: 12px 24px;
-    text-align: center;
-  }
-
-  .dropdownLink:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-  }
-
-  .dropdownLink::after {
-    left: 24px;
-    right: 24px;
-  }
-}
-
-/* ホバー時のドロップダウンメニュー表示 */
+/* タブレット以上のスタイル */
 @media (min-width: 769px) {
+  .dropdownButton {
+    width: auto;
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    justify-content: flex-start;
+  }
+
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.2s ease;
+  }
+
   .dropdownContainer:hover .dropdownMenu {
     opacity: 1;
     visibility: visible;
@@ -299,45 +256,17 @@
 
   .dropdownContainer:hover .dropdownButton {
     color: var(--accent-color);
-  }
-
-  /* クリックイベントを無効化 */
-  .dropdownButton {
-    pointer-events: none;
+    border-color: var(--accent-color);
   }
 }
 
-/* モバイル時のスタイル */
-@media (max-width: 768px) {
-  .dropdownMenu {
-    position: static;
-    box-shadow: none;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.02);
-    border-radius: 8px;
-    margin: 8px 16px;
-    padding: 4px 0;
-  }
-
-  .dropdownMenu.show {
-    display: block;
-  }
-
-  /* モバイル時はクリックイベントを有効化 */
+/* モスクトップサイズのスタイル */
+@media (min-width: 1024px) {
   .dropdownButton {
-    pointer-events: auto;
-    width: 100%;
-    justify-content: center;
-    padding: 12px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
-}
 
-/* ドロップダウンメニューの各項目のスタイル */
-.dropdownMenu li {
-  margin: 0;
-  padding: 0;
+  .dropdownLink {
+    padding: 0.8rem 1.5rem;
+  }
 }

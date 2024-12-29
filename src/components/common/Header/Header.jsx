@@ -74,13 +74,19 @@ const Header = () => {
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.dropdownContainer}`}>
-            <button 
+            <Link 
+              to="/marine"
               className={styles.dropdownButton}
-              onClick={() => window.innerWidth <= 768 && setIsMarineDropdownOpen(!isMarineDropdownOpen)}
+              onClick={(e) => {
+                if (window.innerWidth <= 768) {
+                  e.preventDefault();
+                  setIsMarineDropdownOpen(!isMarineDropdownOpen);
+                }
+              }}
               aria-expanded={isMarineDropdownOpen}
             >
               マリンアクティビティ ▼
-            </button>
+            </Link>
             <ul className={`${styles.dropdownMenu} ${isMarineDropdownOpen ? styles.show : ''}`}>
               <li>
                 <Link to="/snorkelling" className={styles.dropdownLink}>
@@ -100,13 +106,19 @@ const Header = () => {
             </ul>
           </li>
           <li className={`${styles.navItem} ${styles.dropdownContainer}`}>
-            <button 
+            <Link 
+              to="/lodging"
               className={styles.dropdownButton}
-              onClick={() => window.innerWidth <= 768 && setIsLodgingDropdownOpen(!isLodgingDropdownOpen)}
+              onClick={(e) => {
+                if (window.innerWidth <= 768) {
+                  e.preventDefault();
+                  setIsLodgingDropdownOpen(!isLodgingDropdownOpen);
+                }
+              }}
               aria-expanded={isLodgingDropdownOpen}
             >
               宿泊施設 ▼
-            </button>
+            </Link>
             <ul className={`${styles.dropdownMenu} ${isLodgingDropdownOpen ? styles.show : ''}`}>
               <li>
                 <Link to="/lodging" className={styles.dropdownLink}>
