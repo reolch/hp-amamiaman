@@ -75,7 +75,7 @@ const Header = () => {
           </li>
           <li className={`${styles.navItem} ${styles.dropdownContainer}`}>
             <Link 
-              to="/marine"
+              to="/snorkelling"
               className={styles.dropdownButton}
               onClick={(e) => {
                 if (window.innerWidth <= 768) {
