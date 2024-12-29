@@ -1,0 +1,36 @@
+.parallaxWrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallaxSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .parallaxSection {
+    transform: none !important;
+  }
+}
