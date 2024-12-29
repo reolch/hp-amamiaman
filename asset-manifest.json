@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hp-amamiaman/static/css/main.29a6c23c.css",
-    "main.js": "/hp-amamiaman/static/js/main.a1e54ab3.js",
+    "main.css": "/hp-amamiaman/static/css/main.07bb8374.css",
+    "main.js": "/hp-amamiaman/static/js/main.138acbad.js",
     "static/media/912.jpg": "/hp-amamiaman/static/media/912.4756cf1feff63bbc6240.jpg",
     "static/media/LodgingGridItem2.jpg": "/hp-amamiaman/static/media/LodgingGridItem2.49d806a190e3008e4e81.jpg",
     "static/media/LodgingGridItem3.jpg": "/hp-amamiaman/static/media/LodgingGridItem3.46bd307212168941e5bf.jpg",
@@ -15,18 +15,17 @@
     "static/media/s.jpg": "/hp-amamiaman/static/media/s.e3207a848d019950d22e.jpg",
     "static/media/LodgingGridItem4.jpg": "/hp-amamiaman/static/media/LodgingGridItem4.81cde7bf473295c760b0.jpg",
     "static/media/IMG_0798.jpg": "/hp-amamiaman/static/media/IMG_0798.80473672dca177f913b5.jpg",
-    "static/media/bg-AboutSection.png": "/hp-amamiaman/static/media/bg-AboutSection.15c351537a97a8522495.png",
     "static/media/logo.svg": "/hp-amamiaman/static/media/logo.8b4cb4de98e040b257c8926eb044f3dc.svg",
     "static/media/seakayak.svg": "/hp-amamiaman/static/media/seakayak.37b196b363c1e4819ec12ae7a0b0cad7.svg",
     "static/media/Snorkelling.svg": "/hp-amamiaman/static/media/Snorkelling.f5bdfffc323a7a17545f518a5f639a3a.svg",
     "static/media/boat.svg": "/hp-amamiaman/static/media/boat.a5d3258b918525cd833f3d2243c2c901.svg",
     "static/media/lodging.svg": "/hp-amamiaman/static/media/lodging.b2a5824fba0ca5baa0bb7b4a70422aad.svg",
     "index.html": "/hp-amamiaman/index.html",
-    "main.29a6c23c.css.map": "/hp-amamiaman/static/css/main.29a6c23c.css.map",
-    "main.a1e54ab3.js.map": "/hp-amamiaman/static/js/main.a1e54ab3.js.map"
+    "main.07bb8374.css.map": "/hp-amamiaman/static/css/main.07bb8374.css.map",
+    "main.138acbad.js.map": "/hp-amamiaman/static/js/main.138acbad.js.map"
   },
   "entrypoints": [
-    "static/css/main.29a6c23c.css",
-    "static/js/main.a1e54ab3.js"
+    "static/css/main.07bb8374.css",
+    "static/js/main.138acbad.js"
   ]
 }
