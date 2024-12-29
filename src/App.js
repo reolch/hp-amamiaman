@@ -9,7 +9,7 @@ import NewsSection from './components/Section/NewsSection/NewsSection';
 import ServicesSection from './components/Section/ServiceSection/ServiceSection';
 import AccessSection from './components/Section/AccessSection/AccessSection';
 import Footer from './components/common/Footer/Footer';
-import ParallaxSection from './components/component/ParallaxSection';
+import React from 'react';
 
 // Pages
 import StoreInformation from './pages/StoreInformationPage/StoreInformationPage';
@@ -19,8 +19,6 @@ import SeaKayakPage from './pages/SeaKayakPage/SeakayakPage';
 import GlassBoatPage from './pages/GlassBoatPage/GlassBoatPage';
 import LodgingPage from './pages/LodgingPage/LodgingPage';
 import ContactPage from './pages/ContactPage/ContactPage';
-
-import aboutSectionBg from './assets/images/bg-AboutSection.png';
 
 function App() {
   return (

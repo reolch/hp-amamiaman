@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './LodgingPage.module.css'; // CSS Modulesをインポート
-import lodgingImage from '../../assets/images/s.jpg'; // 画像をインポート
 import SocialShare from '../../components/common/SocialShare/SocialShare';
 import FooterNote from '../../components/common/FooterNote/FooterNote'; // FooterNoteをインポート
 
