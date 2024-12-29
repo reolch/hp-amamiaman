@@ -1,5 +1,6 @@
 // src/components/Section/ServiceSection/ServiceSection.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './ServiceSection.module.css';
 import PropTypes from 'prop-types';
 
@@ -20,25 +21,25 @@ const services = [
     icon: 'snorkelling',
     name: 'シュノーケリング',
     description: '美しいサンゴ礁の海でシュノーケリングを楽しめます。',
-    link: 'hp-amamiaman/snorkelling',
+    link: '/snorkelling',
   },
   {
     icon: 'seakayak',
     name: 'シーカヤック',
     description: 'シーカヤックで海を探索し、新たな発見を。',
-    link: 'hp-amamiaman/seakayak',
+    link: '/seakayak',
   },
   {
     icon: 'glassboat',
     name: 'グラスボート',
     description: 'グラスボートで海底の世界を覗いてみませんか？',
-    link: 'hp-amamiaman/glassboat',
+    link: '/glassboat',
   },
   {
     icon: 'lodging',
     name: '民宿',
     description: 'ゆったりと過ごせる快適な民宿をご用意しています。',
-    link: 'hp-amamiaman/lodging',
+    link: '/lodging',
   },
 ];
 
@@ -51,9 +52,9 @@ const ServiceCard = ({ icon, name, description, link }) => {
       </div>
       <h3 className={styles.name}>{name}</h3>
       <p className={styles.description}>{description}</p>
-      <a href={link} className={styles.link}>
+      <Link to={link} className={styles.link}>
         詳しく見る
-      </a>
+      </Link>
     </div>
   );
 };
