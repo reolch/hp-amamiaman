@@ -96,14 +96,12 @@
 .navLink {
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  padding-bottom: 5px;
   color: var(--text-color);
   line-height: 2;
   font-size: 1rem;
   display: inline-block;
   transition: color 0.3s, border-color 0.3s;
 }
-
 .navLink:hover,
 .navLink:focus {
   color: var(--accent-color);
@@ -190,6 +188,8 @@
   gap: 0.5rem;
   transition: all 0.2s ease;
   white-space: nowrap;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 .dropdownButton:hover {
@@ -272,6 +272,7 @@
     width: 100%;
     justify-content: center;
     padding: 12px;
+    font-size: 1rem;
   }
 
   .dropdownLink {
@@ -331,6 +332,7 @@
     width: 100%;
     justify-content: center;
     padding: 12px;
+    font-size: 1rem;
   }
 }
 
