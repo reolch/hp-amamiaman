@@ -24,7 +24,7 @@ import aboutSectionBg from './assets/images/bg-AboutSection.png';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/hp-amamiaman'>
       <Header />
       <div className='app-container'>
         <Routes>
