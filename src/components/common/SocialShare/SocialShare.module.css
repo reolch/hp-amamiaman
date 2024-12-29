@@ -39,24 +39,14 @@
 }
 
 /* SNS別のカラースタイル */
-.social-share__button--facebook {
-    background-color: #3b5998;
+.social-share__button--instagram {
+    background-color: #E4405F;
+    color: white;
 }
 
-.social-share__button--facebook:hover,
-.social-share__button--facebook:focus {
-    background-color: #2d4373;
-    transform: translateY(-2px);
-}
-
-.social-share__button--twitter {
-    background-color: #1da1f2;
-}
-
-.social-share__button--twitter:hover,
-.social-share__button--twitter:focus {
-    background-color: #0d95e8;
-    transform: translateY(-2px);
+.social-share__button--x {
+    background-color: #000000;
+    color: white;
 }
 
 .social-share__button--line {

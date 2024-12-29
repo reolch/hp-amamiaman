@@ -1,5 +1,5 @@
 // src/components/Header/Header.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaBars, FaTimes } from 'react-icons/fa';
@@ -7,6 +7,25 @@ import logo from '../../../assets/logo.svg'; // ロゴ画像をインポート
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMarineDropdownOpen, setIsMarineDropdownOpen] = useState(false);
+  const [isLodgingDropdownOpen, setIsLodgingDropdownOpen] = useState(false);
+
+  const handleClickOutside = (event) => {
+    if (!event.target.closest(`.${styles.globalNav}`) && !event.target.closest(`.${styles.menuIcon}`)) {
+      setIsMenuOpen(false);
+      if (window.innerWidth <= 768) {
+        setIsMarineDropdownOpen(false);
+        setIsLodgingDropdownOpen(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -54,25 +73,52 @@ const Header = () => {
               あまんのこだわり
             </Link>
           </li>
-          <li className={styles.navItem}>
-            <Link to="/snorkelling" className={styles.navLink}>
-              シュノーケリング
-            </Link>
+          <li className={`${styles.navItem} ${styles.dropdownContainer}`}>
+            <button 
+              className={styles.dropdownButton}
+              onClick={() => window.innerWidth <= 768 && setIsMarineDropdownOpen(!isMarineDropdownOpen)}
+              aria-expanded={isMarineDropdownOpen}
+            >
+              マリンアクティビティ ▼
+            </button>
+            <ul className={`${styles.dropdownMenu} ${isMarineDropdownOpen ? styles.show : ''}`}>
+              <li>
+                <Link to="/snorkelling" className={styles.dropdownLink}>
+                  シュノーケリング
+                </Link>
+              </li>
+              <li>
+                <Link to="/seaKayak" className={styles.dropdownLink}>
+                  シーカヤック
+                </Link>
+              </li>
+              <li>
+                <Link to="/glassboat" className={styles.dropdownLink}>
+                  グラスボート
+                </Link>
+              </li>
+            </ul>
           </li>
-          <li className={styles.navItem}>
-            <Link to="/seaKayak" className={styles.navLink}>
-              シーカヤック
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link to="/glassboat" className={styles.navLink}>
-              グラスボート
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link to="/lodging" className={styles.navLink}>
-              民宿
-            </Link>
+          <li className={`${styles.navItem} ${styles.dropdownContainer}`}>
+            <button 
+              className={styles.dropdownButton}
+              onClick={() => window.innerWidth <= 768 && setIsLodgingDropdownOpen(!isLodgingDropdownOpen)}
+              aria-expanded={isLodgingDropdownOpen}
+            >
+              宿泊施設 ▼
+            </button>
+            <ul className={`${styles.dropdownMenu} ${isLodgingDropdownOpen ? styles.show : ''}`}>
+              <li>
+                <Link to="/lodging" className={styles.dropdownLink}>
+                  民宿
+                </Link>
+              </li>
+              <li>
+                <Link to="/trailer" className={styles.dropdownLink}>
+                  トレーラーハウス
+                </Link>
+              </li>
+            </ul>
           </li>
           <li className={styles.navItem}>
             <Link to="/access" className={styles.navLink}>

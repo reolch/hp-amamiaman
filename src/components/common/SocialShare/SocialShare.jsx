@@ -1,7 +1,8 @@
 // src/components/SocialShare/SocialShare.jsx
 import React from 'react';
-import styles from './SocialShare.module.css'; // CSS Modulesをインポート
-import { FaFacebookF, FaTwitter, FaLine } from 'react-icons/fa';
+import styles from './SocialShare.module.css';
+import { FaInstagram, FaLine } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const SocialShare = () => {
     return (
@@ -9,24 +10,24 @@ const SocialShare = () => {
             <div className={styles['social-share__container']}>
                 <div className={styles['social-share__buttons']}>
                     <a 
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://www.amamiaman.com/shop" 
+                        href="https://www.instagram.com/amamiaman"
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className={`${styles['social-share__button']} ${styles['social-share__button--facebook']}`}
-                        aria-label="Facebookでこのページをシェア"
+                        className={`${styles['social-share__button']} ${styles['social-share__button--instagram']}`}
+                        aria-label="Instagramでフォローする"
                     >
-                        <FaFacebookF className={styles['social-share__icon']} />
-                        Facebook
+                        <FaInstagram className={styles['social-share__icon']} />
+                        Instagram
                     </a>
                     <a 
-                        href="https://twitter.com/intent/tweet?url=https://www.amamiaman.com/shop&text=店舗案内" 
+                        href="https://x.com/share?url=https://www.amamiaman.com/shop&text=店舗案内" 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className={`${styles['social-share__button']} ${styles['social-share__button--twitter']}`}
-                        aria-label="Twitterでこのページをシェア"
+                        className={`${styles['social-share__button']} ${styles['social-share__button--x']}`}
+                        aria-label="Xでこのページをシェア"
                     >
-                        <FaTwitter className={styles['social-share__icon']} />
-                        Twitter
+                        <FaXTwitter className={styles['social-share__icon']} />
+                        X
                     </a>
                     <a 
                         href="https://line.me/R/share?url=https://www.amamiaman.com/shop" 
