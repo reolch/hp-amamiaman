@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hp-amamiaman/static/css/main.29a6c23c.css",
-    "main.js": "/hp-amamiaman/static/js/main.021a9663.js",
+    "main.js": "/hp-amamiaman/static/js/main.a1e54ab3.js",
     "static/media/912.jpg": "/hp-amamiaman/static/media/912.4756cf1feff63bbc6240.jpg",
     "static/media/LodgingGridItem2.jpg": "/hp-amamiaman/static/media/LodgingGridItem2.49d806a190e3008e4e81.jpg",
     "static/media/LodgingGridItem3.jpg": "/hp-amamiaman/static/media/LodgingGridItem3.46bd307212168941e5bf.jpg",
@@ -23,10 +23,10 @@
     "static/media/lodging.svg": "/hp-amamiaman/static/media/lodging.b2a5824fba0ca5baa0bb7b4a70422aad.svg",
     "index.html": "/hp-amamiaman/index.html",
     "main.29a6c23c.css.map": "/hp-amamiaman/static/css/main.29a6c23c.css.map",
-    "main.021a9663.js.map": "/hp-amamiaman/static/js/main.021a9663.js.map"
+    "main.a1e54ab3.js.map": "/hp-amamiaman/static/js/main.a1e54ab3.js.map"
   },
   "entrypoints": [
     "static/css/main.29a6c23c.css",
-    "static/js/main.021a9663.js"
+    "static/js/main.a1e54ab3.js"
   ]
 }
