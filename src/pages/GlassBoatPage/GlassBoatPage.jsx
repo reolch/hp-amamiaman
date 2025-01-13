@@ -54,7 +54,8 @@ const GlassBoatPage = () => {
               </tr>
               <tr>
                 <td>案内時間</td>
-                <td>8:00～17:00の間</td>
+                <td>9:00～17:00の間</td>
+                <td>その日の潮位によって時間が変わります。</td>
               </tr>
             </tbody>
           </table>

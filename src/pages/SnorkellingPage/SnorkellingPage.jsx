@@ -69,8 +69,13 @@ const SnorkellingPage = () => {
               </tr>
               <tr>
                 <th scope="row">案内時間</th>
-                <td>8:00～17:00の間</td>
-                <td>8:00～17:00</td>
+                <td>9:00～12:00</td>
+                <td>13:00～16:00</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp;</th>
+                <td>13:00～16:00</td>
+                <td>&nbsp;</td>
               </tr>
             </tbody>
           </table>
@@ -107,7 +112,7 @@ const SnorkellingPage = () => {
               <tr>
                 <th className={styles.label} scope="row">備考</th>
                 <td className={styles.value}>
-                  必要な方は日焼け止めなどもご用意ください。ご予約はお電話にて受け付けています。
+                  必要な方は日焼け止めなどもご用意ください。ご予約はメールまたはお電話にて受け付けています。
                 </td>
               </tr>
             </tbody>

@@ -72,8 +72,8 @@ const LodgingPage = () => {
               <tbody>
                 <tr>
                   <th>料金</th>
-                  <td>3,500円</td>
-                  <td>3,000円（1名様）</td>
+                  <td>4,500円</td>
+                  <td>4,000円（1名様）</td>
                 </tr>
               </tbody>
             </table>
@@ -98,10 +98,10 @@ const LodgingPage = () => {
                 <td className={styles.value}>男性○名、女性○名</td>
               </tr>
               <tr>
-                <td className={styles.value}>参加者全員のフルネーム</td>
+                <td className={styles.value}>宿泊者全員のフルネーム</td>
               </tr>
               <tr>
-                <td className={styles.value}>参加者全員の年齢</td>
+                <td className={styles.value}>宿泊者全員の年齢</td>
               </tr>
               <tr>
                 <td className={styles.value}>経験歴</td>
@@ -109,7 +109,8 @@ const LodgingPage = () => {
               <tr>
                 <th className={styles.label}>備考</th>
                 <td className={styles.value}>
-                  必要な方は日焼け止めなどもご用意ください。ご予約はお電話にて受け付けています。
+                  ご予約はメールまたはお電話にて受け付けています。
+                  宿泊客以外の入室はご遠慮ください。
                 </td>
               </tr>
             </tbody>

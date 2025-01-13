@@ -47,7 +47,7 @@ const StoreInformationPage = () => {
                 </tr>
                 <tr>
                   <th scope="row">所在地</th>
-                  <td>〒894-1521 鹿児島県大島郡瀬戸内町清水古仁屋平原375-1</td>
+                  <td>〒894-1521 鹿児島県大島郡瀬戸内町清水375-1</td>
                 </tr>
                 <tr>
                   <th scope="row">電話番号</th>
@@ -71,7 +71,7 @@ const StoreInformationPage = () => {
                 </tr>
                 <tr>
                   <th scope="row">営業時間</th>
-                  <td>8:00～17:00</td>
+                  <td>9:00～17:00</td>
                 </tr>
                 <tr>
                   <th scope="row">定休日</th>
@@ -79,7 +79,7 @@ const StoreInformationPage = () => {
                 </tr>
                 <tr>
                   <th scope="row">支払い</th>
-                  <td>現金のみ</td>
+                  <td>現金,クレジットカード</td>
                 </tr>
                 <tr>
                   <th scope="row">駐車場</th>

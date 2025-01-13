@@ -27,7 +27,7 @@ const AccessSection = () => {
                   <p className={styles.accessSectionInfoDescription}>
                     〒894-1521
                     <br />
-                    鹿児島県大島郡瀬戸内町清水古仁屋平原375-1
+                    鹿児島県大島郡瀬戸内町清水375-1
                   </p>
                 </div>
               </div>

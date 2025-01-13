@@ -125,11 +125,6 @@ const Header = () => {
                   民宿
                 </Link>
               </li>
-              <li>
-                <Link to="/trailer" className={styles.dropdownLink}>
-                  トレーラーハウス
-                </Link>
-              </li>
             </ul>
           </li>
           <li className={styles.navItem}>

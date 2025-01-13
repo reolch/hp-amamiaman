@@ -31,9 +31,11 @@ const SeaKayakPage = () => {
               <br />
               サンゴ礁の海を滑るように進むシーカヤックは最高です！
               <br />
-              天気の良い日には、加計呂麻島までシーカヤックを漕いで行き、美しいビーチで
+              シーカヤックを漕いで行き、美しいビーチで
               <br className={styles.desktopOnly} />
               シュノーケリングを楽しむこともできます。
+              <br />
+              運が良ければウミガメを見ることができます。
             </p>
           </div>
         </section>
@@ -49,12 +51,20 @@ const SeaKayakPage = () => {
             </thead>
             <tbody>
               <tr>
+
+
+
                 <th scope="row">料金（お一人様）</th>
                 <td>大人:6,000円 子ども:4,000円</td>
               </tr>
               <tr>
                 <th scope="row">案内時間</th>
-                <td>8:00～17:00の間</td>
+                <td>9:00～12:00</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">&nbsp;</th>
+                <td>13:00～16:00</td>
               </tr>
             </tbody>
           </table>
@@ -99,7 +109,9 @@ const SeaKayakPage = () => {
               <tr>
                 <th className={styles.label} scope="row">備考</th>
                 <td className={styles.value}>
-                  必要な方は日焼け止めなどもご用意ください。ご予約は電話にて受付けています。
+                  必要な方は日焼け止めなどもご用意ください。<br />
+                  乗降時には膝下まで水につかります。<br />
+                  ご予約はメールまたは電話にて受付けています。<br />
                 </td>
               </tr>
             </tbody>
