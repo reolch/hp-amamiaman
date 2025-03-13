@@ -77,7 +77,7 @@ const AccessSection = () => {
                 <div className={styles.accessSectionInfoText}>
                   <h3 className={styles.accessSectionInfoTitle}>アクセス</h3>
                   <p className={styles.accessSectionInfoDescription}>
-                    空港から約1時間30分
+                    空港から約2時間
                   </p>
                 </div>
               </div>

@@ -6,33 +6,39 @@ const slides = [
   {
     id: 1,
     url: process.env.PUBLIC_URL + '/slide1.jpg',
-    catchphrase: 'キャッチフレーズ1',
-    description: '説明文1',
+    catchphrase: '',
+    description: '',
   },
   {
     id: 2,
     url: process.env.PUBLIC_URL + '/slide2.jpg',
-    catchphrase: 'キャッチフレーズ2',
-    description: '説明文2',
+    catchphrase: '',
+    description: '',
   },
   {
     id: 3,
     url: process.env.PUBLIC_URL + '/slide3.jpg',
-    catchphrase: 'キャッチフレーズ3',
-    description: '説明文3',
+    catchphrase: '',
+    description: '',
   },
   {
     id: 4,
     url: process.env.PUBLIC_URL + '/slide4.jpg',
-    catchphrase: 'キャッチフレーズ4',
-    description: '説明文4',
+    catchphrase: '',
+    description: '',
   },
   {
     id: 5,
-    url: process.env.PUBLIC_URL + '/slide5.jpg',
-    catchphrase: '探検する',
-    description: '宝石のように美しい海を',
+    url: process.env.PUBLIC_URL + '/正面外観.jpg',
+    catchphrase: '',
+    description: '',
   },
+  {
+    id: 6,
+    url: process.env.PUBLIC_URL + '/宿泊施設.jpg',
+    catchphrase: '',
+    description: '',
+  }
 ];
 
 
