@@ -22,7 +22,7 @@ const StoreInformationPage = () => {
               loading="lazy"
               className={styles.iframe}
             ></iframe>
-            <p className={styles.mapDescription}>空港から約1時間30分</p>
+            <p className={styles.mapDescription}>空港から約2時間</p>
           </div>
         </section>
 

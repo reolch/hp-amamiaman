@@ -238,6 +238,7 @@
   margin: 0.5rem 1rem;
   border-radius: 8px;
   display: none;
+  list-style: none;
 }
 
 .dropdownMenu.show {

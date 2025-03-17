@@ -5,7 +5,6 @@ import SocialShare from '../../components/common/SocialShare/SocialShare';
 import item1 from '../../assets/images/pages/施設紹介/シャワー室.jpg';
 import item2 from '../../assets/images/pages/施設紹介/ロビー.jpg';
 
-
 const OtherFacilitiesPage = () => {
   return (
     <main className={styles.section} aria-labelledby="lodging-page-heading">
@@ -16,20 +15,16 @@ const OtherFacilitiesPage = () => {
         </h1>
         <div className={styles.descriptionContainer}>
           <p className={styles.description}>
-            当店は、シャワー室をご提供しています。
-            <br />
-            お部屋は、和室と洋室をご用意しています。
-            <br />
-            タオル類や、冷蔵庫など必要な物はこちらでご用意していますので、お気軽にお越しください。
+            アクティビティ体験後にはシャワー室をご利用いただけます。
           </p>
         </div>
 
         <div className={styles.imageGrid}>
           <div className={styles.imageItem}>
-            <img src={item1} alt="" />
+            <img src={item1} alt="シャワー室" />
           </div>
           <div className={styles.imageItem}>
-            <img src={item2} alt="" />
+            <img src={item2} alt="ロビー" />
           </div>
         </div>
 
