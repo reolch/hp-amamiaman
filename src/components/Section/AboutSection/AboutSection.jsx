@@ -40,7 +40,10 @@ const AboutSection = () => {
   return (
     <section className={styles.section} ref={sectionRef}>
       <div className={styles.content} ref={contentRef}>
-        <h2>大自然で子どもから大人までマリンスポーツを楽しめる！</h2>
+        <h2>
+          大自然で子どもから大人まで<br />
+          マリンスポーツを楽しめる！
+        </h2>
         <p>
           グラスボートでサンゴ礁の海をご案内。
           <br />
@@ -52,9 +55,6 @@ const AboutSection = () => {
           <br />
           大島海峡の海遊びは「あまん」におまかせ！
         </p>
-        {/* <a href="/more-info" className={styles.button}>
-          もっと詳しく
-        </a> */}
       </div>
     </section>
   );

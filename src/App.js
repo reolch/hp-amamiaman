@@ -1,15 +1,13 @@
 // App.js
 import './Font.css';
 import './App.css';
+
+import {React} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AboutSection from './components/Section/AboutSection/AboutSection'
+
 import Header from './components/common/Header/Header';
-import HeroSection from './components/Section/HeroSection/HeroSection';
-import NewsSection from './components/Section/NewsSection/NewsSection';
-import ServicesSection from './components/Section/ServiceSection/ServiceSection';
-import AccessSection from './components/Section/AccessSection/AccessSection';
 import Footer from './components/common/Footer/Footer';
-import React from 'react';
+
 
 // Pages
 import StoreInformation from './pages/StoreInformationPage/StoreInformationPage';
@@ -19,32 +17,25 @@ import SeaKayakPage from './pages/SeaKayakPage/SeakayakPage';
 import GlassBoatPage from './pages/GlassBoatPage/GlassBoatPage';
 import LodgingPage from './pages/LodgingPage/LodgingPage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import HomePage from './pages/HomePage/HomePage';
 
 function App() {
   return (
     <Router basename='/hp-amamiaman'>
-      <Header />
-      <div className='app-container'>
-        <Routes>
-          <Route path="/access" element={<StoreInformation />} />
-          <Route path="/passion" element={<OurPassionPage />} />
-          <Route path="/snorkelling" element={<Snorkelling />} />
-          <Route path="/seaKayak" element={<SeaKayakPage />} />
-          <Route path="/glassboat" element={<GlassBoatPage />} />
-          <Route path="/lodging" element={<LodgingPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/" element={
-            <>
-              <HeroSection />
-              <AboutSection />
-              <ServicesSection />
-              <AccessSection />
-              <NewsSection />
-            </>
-          } />
-        </Routes>
+      <div className='wrapper'>
+        <Header />
+          <Routes>
+            <Route path="/access" element={<StoreInformation />} />
+            <Route path="/passion" element={<OurPassionPage />} />
+            <Route path="/snorkelling" element={<Snorkelling />} />
+            <Route path="/seaKayak" element={<SeaKayakPage />} />
+            <Route path="/glassboat" element={<GlassBoatPage />} />
+            <Route path="/lodging" element={<LodgingPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        <Footer />
       </div>
-      <Footer />
     </Router>
   );
 }

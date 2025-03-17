@@ -91,9 +91,6 @@ const GlassBoatPage = () => {
                 <td className={styles.value}>参加者全員の年齢</td>
               </tr>
               <tr>
-                <td className={styles.value}>経験歴</td>
-              </tr>
-              <tr>
                 <th className={styles.label}>備考</th>
                 <td className={styles.value}>
                   ご予約は電話にて受け付けています。

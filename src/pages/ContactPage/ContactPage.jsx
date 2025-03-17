@@ -1,10 +1,19 @@
 // src/components/ContactPage/ContactPage.jsx
-import React from 'react';
+import { React, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './ContactPage.module.css';
 import SocialShare from '../../components/common/SocialShare/SocialShare';
 import FooterNote from '../../components/common/FooterNote/FooterNote';
 
+
+
 const ContactPage = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <main className={styles.section} aria-labelledby="contact-page-heading">
       <div className={styles.container}>

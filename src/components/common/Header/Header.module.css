@@ -1,4 +1,18 @@
 /* ヘッダーコンポーネントのスタイル */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Rampart+One&display=swap');
+
+.noto_sans_jp_400 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rampart_one_regular {
+  font-family: "Rampart One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* ヘッダー全体のベースレイアウト */
 .header {
@@ -26,15 +40,27 @@
 }
 
 /* ハンバーガーメニューボタン */
+.menuButtonContainer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001; /* 他の要素より前面に表示 */
+}
+
 .menuIcon {
   background: none;
   border: none;
   cursor: pointer;
   font-size: 2rem;
   color: var(--text-color);
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuToggleIcon {
+  pointer-events: none; /* アイコン自体のクリックイベントを無効化 */
 }
 
 .menuIcon:hover,
@@ -81,15 +107,16 @@
 }
 
 /* ナビゲーションメニューリスト */
-.navList,
-.dropdownMenu {
+.navList {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .navItem {
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 /* ナビゲーションリンク */
@@ -99,8 +126,11 @@
   color: var(--text-color);
   line-height: 2;
   font-size: 1rem;
-  display: inline-block;
+  display: block;
   transition: color 0.3s, border-color 0.3s;
+  text-align: center;
+  padding: 0.5rem 0;
+  width: 100%;
 }
 .navLink:hover,
 .navLink:focus {
@@ -146,8 +176,15 @@
     font-size: 1.5rem;
   }
 
+  .menuButtonContainer,
   .menuIcon {
     display: none;
+  }
+
+  .navLink {
+    display: inline-block;
+    width: auto;
+    padding: 0;
   }
 }
 
@@ -162,7 +199,7 @@
   }
 
   .navLink {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .phoneIcon,
@@ -247,6 +284,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: all 0.2s ease;
+    list-style: none;
   }
 
   .dropdownContainer:hover .dropdownMenu {
@@ -263,7 +301,7 @@
 /* モスクトップサイズのスタイル */
 @media (min-width: 1024px) {
   .dropdownButton {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .dropdownLink {

@@ -75,10 +75,6 @@ const SeaKayakPage = () => {
           <table className={styles.table}>
             <tbody>
               <tr>
-                <th className={styles.label} scope="row">参加可能年齢</th>
-                <td className={styles.value}>小学生以上（要相談）</td>
-              </tr>
-              <tr>
                 <th className={styles.label} scope="row">用意する物</th>
                 <td className={styles.value}>水着・タオル</td>
               </tr>

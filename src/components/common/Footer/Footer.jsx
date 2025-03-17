@@ -22,21 +22,6 @@ const Footer = () => {
                                     HOME
                                 </Link>
                             </li>
-                            <li className={styles.footer__linkItem}>
-                                <Link to="/shop" className={styles.footer__link}>
-                                    店舗案内
-                                </Link>
-                            </li>
-                            <li className={styles.footer__linkItem}>
-                                <Link to="/sitemap" className={styles.footer__link}>
-                                    サイトマップ
-                                </Link>
-                            </li>
-                            <li className={styles.footer__linkItem}>
-                                <Link to="/policy" className={styles.footer__link}>
-                                    プライバシーポリシー
-                                </Link>
-                            </li>
                         </ul>
                     </nav>
                 </div>

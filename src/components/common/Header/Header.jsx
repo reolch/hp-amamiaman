@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../../assets/logo.svg'; // ロゴ画像をインポート
+import logo from '../../../assets/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,21 +35,23 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.topBar}>
         <div className={styles.logo}>
-          <img src={logo} alt="マリンサービスあまんのロゴ" className={styles.logoImage} />
+          <h1><a href="/hp-amamiaman" className={styles.rampart_one_regular}>ヤマハタマリンスポーツあまん</a></h1>
         </div>
-        <button
-          className={styles.menuIcon}
-          onClick={toggleMenu}
-          aria-label="メニューを切り替え"
-          aria-expanded={isMenuOpen}
-          aria-controls="global-navigation"
-        >
-          {isMenuOpen ? (
-            <FaTimes className={styles.menuToggleIcon} />
-          ) : (
-            <FaBars className={styles.menuToggleIcon} />
-          )}
-        </button>
+        <div className={styles.menuButtonContainer}>
+          <button
+            className={styles.menuIcon}
+            onClick={toggleMenu}
+            aria-label="メニューを切り替え"
+            aria-expanded={isMenuOpen}
+            aria-controls="global-navigation"
+          >
+            {isMenuOpen ? (
+              <FaTimes className={styles.menuToggleIcon} />
+            ) : (
+              <FaBars className={styles.menuToggleIcon} />
+            )}
+          </button>
+        </div>
         <div className={styles.contact}>
           <FaPhone className={styles.phoneIcon} />
           <a href="tel:0997724584" className={styles.phoneNumber}>

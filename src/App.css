@@ -8,3 +8,8 @@
     --border-color: #bdc3c7;
     --transition-duration: 0.3s;
 }
+
+.wrapper {
+    max-width: 1680px;
+    margin: 0 auto;
+}
