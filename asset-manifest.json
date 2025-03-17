@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hp-amamiaman/static/css/main.48c6d09e.css",
-    "main.js": "/hp-amamiaman/static/js/main.265df14f.js",
+    "main.css": "/hp-amamiaman/static/css/main.a5fc94a4.css",
+    "main.js": "/hp-amamiaman/static/js/main.1297fad8.js",
     "static/media/912.jpg": "/hp-amamiaman/static/media/912.4756cf1feff63bbc6240.jpg",
     "static/media/top.JPG": "/hp-amamiaman/static/media/top.0bfe88bbfba04d477624.JPG",
     "static/media/LodgingGridItem2.jpg": "/hp-amamiaman/static/media/LodgingGridItem2.49d806a190e3008e4e81.jpg",
@@ -19,11 +19,11 @@
     "static/media/boat.svg": "/hp-amamiaman/static/media/boat.a5d3258b918525cd833f3d2243c2c901.svg",
     "static/media/lodging.svg": "/hp-amamiaman/static/media/lodging.b2a5824fba0ca5baa0bb7b4a70422aad.svg",
     "index.html": "/hp-amamiaman/index.html",
-    "main.48c6d09e.css.map": "/hp-amamiaman/static/css/main.48c6d09e.css.map",
-    "main.265df14f.js.map": "/hp-amamiaman/static/js/main.265df14f.js.map"
+    "main.a5fc94a4.css.map": "/hp-amamiaman/static/css/main.a5fc94a4.css.map",
+    "main.1297fad8.js.map": "/hp-amamiaman/static/js/main.1297fad8.js.map"
   },
   "entrypoints": [
-    "static/css/main.48c6d09e.css",
-    "static/js/main.265df14f.js"
+    "static/css/main.a5fc94a4.css",
+    "static/js/main.1297fad8.js"
   ]
 }
