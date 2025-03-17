@@ -44,13 +44,12 @@ const NewsSection = () => {
     const fetchNews = async () => {
       try {
         setIsLoading(true);
-        // publicフォルダ内のJSONファイルを取得
-        const response = await fetch('/news.json');
+        const response = await fetch(`/hp-amamiaman/data/news.json`);
         if (!response.ok) {
           throw new Error('ニュースの取得に失敗しました');
         }
         const data = await response.json();
-        setNewsData(data.news); // news配列を取得
+        setNewsData(data.news);
       } catch (err) {
         setError(err.message);
         console.error('Error fetching news:', err);
@@ -90,7 +89,6 @@ const NewsSection = () => {
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
-          navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
           loop={newsData.length > 1}

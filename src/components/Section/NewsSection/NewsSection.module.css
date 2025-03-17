@@ -1,7 +1,7 @@
 /* src/components/NewsSection/NewsSection.module.css */
 
 .newsSection {
-  padding: 20px;
+  padding: 40px;
   background-color: var(--background-color);
 }
 
