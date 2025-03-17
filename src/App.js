@@ -18,6 +18,7 @@ import GlassBoatPage from './pages/GlassBoatPage/GlassBoatPage';
 import LodgingPage from './pages/LodgingPage/LodgingPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/HomePage/HomePage';
+import OtherFacilitiesPage from './pages/OtherFacilities/OtherFacilitiesPage';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/seaKayak" element={<SeaKayakPage />} />
             <Route path="/glassboat" element={<GlassBoatPage />} />
             <Route path="/lodging" element={<LodgingPage />} />
+            <Route path="/other" element={<OtherFacilitiesPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/" element={<HomePage />} />
           </Routes>

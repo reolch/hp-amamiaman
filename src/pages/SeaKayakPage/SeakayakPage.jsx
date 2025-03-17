@@ -1,7 +1,7 @@
 // src/components/SeaKayakPage/SeaKayakPage.jsx
 import React from 'react';
 import styles from './SeaKayakPage.module.css';
-import seakayakImage1 from '../../assets/images/s.jpg';
+import seakayakImage1 from '../../assets/images/pages/シーカヤック/top.JPG';
 import SocialShare from '../../components/common/SocialShare/SocialShare';
 import FooterNote from '../../components/common/FooterNote/FooterNote';
 
@@ -23,7 +23,7 @@ const SeaKayakPage = () => {
               loading="lazy"
               className={styles.image}
             />
-            <figcaption className={styles.imageCaption}>奄美の美しい海景色</figcaption>
+            <figcaption className={styles.imageCaption}>シーカヤックで奄美の海を楽しむ様子</figcaption>
           </figure>
           <div className={styles.descriptionContainer}>
             <p className={styles.description}>

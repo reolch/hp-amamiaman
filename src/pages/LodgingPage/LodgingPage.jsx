@@ -28,17 +28,17 @@ const LodgingPage = () => {
         </div>
 
         <div className={styles.grid}>
-          <img
+          {/* <img
             className={`${styles.image} ${styles.item1}`}
             src={item1}
             alt="客室1の写真"
-          />
+          /> */}
           <img
             className={`${styles.image} ${styles.item2}`}
             src={item2}
             alt="客室2の写真"
           />
-          <img
+          {/* <img
             className={`${styles.image} ${styles.item3}`}
             src={item3}
             alt="客室3の写真"
@@ -52,7 +52,7 @@ const LodgingPage = () => {
             className={`${styles.image} ${styles.item5}`}
             src={item5}
             alt="客室5の写真"
-          />
+          /> */}
         </div>
 
         {/* Details Section */}

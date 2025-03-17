@@ -1,7 +1,7 @@
 // src/components/GlassBoatPage/GlassBoatPage.jsx
 import React from 'react';
-import styles from './GlassBoatPage.module.css'; // CSS Modulesをインポート
-import glassBoatImage from '../../assets/images/s.jpg'; // 画像をインポート
+import styles from './GlassBoatPage.module.css';
+import glassBoatImage from '../../assets/images/pages/グラスボート/top.jpg';
 import SocialShare from '../../components/common/SocialShare/SocialShare';
 import FooterNote from '../../components/common/FooterNote/FooterNote';
 
@@ -23,7 +23,7 @@ const GlassBoatPage = () => {
               loading="lazy"
               className={styles.image}
             />
-            <figcaption className={styles.imageCaption}>奄美の美しい海景色</figcaption>
+            <figcaption className={styles.imageCaption}>グラスボート</figcaption>
           </figure>
           <div className={styles.descriptionContainer}>
             <p className={styles.description}>

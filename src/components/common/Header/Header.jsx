@@ -127,6 +127,11 @@ const Header = () => {
                   民宿
                 </Link>
               </li>
+              <li>
+                <Link to="/other" className={styles.dropdownLink}>
+                  施設紹介
+                </Link>
+              </li>
             </ul>
           </li>
           <li className={styles.navItem}>
