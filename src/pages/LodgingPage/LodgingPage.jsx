@@ -3,11 +3,7 @@ import styles from './LodgingPage.module.css'; // CSS Modulesをインポート
 import SocialShare from '../../components/common/SocialShare/SocialShare';
 import FooterNote from '../../components/common/FooterNote/FooterNote'; // FooterNoteをインポート
 
-import item1 from '../../assets/images/LodgingGridItem1.jpg';
 import item2 from '../../assets/images/LodgingGridItem2.jpg';
-import item3 from '../../assets/images/LodgingGridItem3.jpg';
-import item4 from '../../assets/images/LodgingGridItem4.jpg';
-import item5 from '../../assets/images/LodgingGridItem5.jpg';
 
 const LodgingPage = () => {
   return (
@@ -28,31 +24,11 @@ const LodgingPage = () => {
         </div>
 
         <div className={styles.grid}>
-          {/* <img
-            className={`${styles.image} ${styles.item1}`}
-            src={item1}
-            alt="客室1の写真"
-          /> */}
           <img
             className={`${styles.image} ${styles.item2}`}
             src={item2}
             alt="客室2の写真"
           />
-          {/* <img
-            className={`${styles.image} ${styles.item3}`}
-            src={item3}
-            alt="客室3の写真"
-          />
-          <img
-            className={`${styles.image} ${styles.item4}`}
-            src={item4}
-            alt="客室4の写真"
-          />
-          <img
-            className={`${styles.image} ${styles.item5}`}
-            src={item5}
-            alt="客室5の写真"
-          /> */}
         </div>
 
         {/* Details Section */}

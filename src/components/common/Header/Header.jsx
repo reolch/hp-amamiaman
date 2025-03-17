@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../../assets/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
