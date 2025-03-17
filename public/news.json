@@ -1,0 +1,39 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "夏季シュノーケリングツアー予約開始",
+      "date": "2024-04-01",
+      "description": "今年の夏季シュノーケリングツアーの予約受付を開始いたしました。美しいサンゴ礁と熱帯魚をお楽しみください。",
+      "imageUrl": "/images/news/snorkelling.jpg"
+    },
+    {
+      "id": 2,
+      "title": "新しいシーカヤックが導入されました",
+      "date": "2024-03-15",
+      "description": "最新の安全設備を備えた新型シーカヤックを導入。より快適な海上体験をお届けします。",
+      "imageUrl": "/images/news/kayak.jpg"
+    },
+    {
+      "id": 3,
+      "title": "グラスボートツアー春の特別プラン",
+      "date": "2024-03-01",
+      "description": "春の特別プランとして、グラスボートツアーが20%オフ。水中世界を覗いてみませんか。",
+      "imageUrl": "/images/news/glassboat.jpg"
+    },
+    {
+      "id": 4,
+      "title": "宿泊施設リニューアル完了",
+      "date": "2024-02-20",
+      "description": "全室のアメニティを一新し、より快適な滞在環境を整えました。Wi-Fi環境も強化しています。",
+      "imageUrl": "/images/news/lodging.jpg"
+    },
+    {
+      "id": 5,
+      "title": "春休み限定ファミリープラン登場",
+      "date": "2024-02-01",
+      "description": "ご家族向けの特別プランをご用意しました。お子様の体験料金が半額になります。",
+      "imageUrl": "/images/news/family.jpg"
+    }
+  ]
+} 

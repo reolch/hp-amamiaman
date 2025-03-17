@@ -1,7 +1,6 @@
 // src/components/NewsSection/NewsSection.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './NewsSection.module.css';
-import newsData from './newsData';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import 'swiper/css';
@@ -10,8 +9,6 @@ import 'swiper/css/pagination';
 import { format, parseISO } from 'date-fns';
 import ja from 'date-fns/locale/ja';
 import PropTypes from 'prop-types';
-
-
 
 const NewsItem = ({ id, title, date, description, imageUrl }) => {
   const formattedDate = format(parseISO(date), 'yyyy年MM月dd日', { locale: ja });
@@ -39,6 +36,50 @@ NewsItem.propTypes = {
 };
 
 const NewsSection = () => {
+  const [newsData, setNewsData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        setIsLoading(true);
+        // publicフォルダ内のJSONファイルを取得
+        const response = await fetch('/news.json');
+        if (!response.ok) {
+          throw new Error('ニュースの取得に失敗しました');
+        }
+        const data = await response.json();
+        setNewsData(data.news); // news配列を取得
+      } catch (err) {
+        setError(err.message);
+        console.error('Error fetching news:', err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchNews();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section className={styles.newsSection}>
+        <h2 className={styles.title}>最新ニュース</h2>
+        <div className={styles.loading}>読み込み中...</div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className={styles.newsSection}>
+        <h2 className={styles.title}>最新ニュース</h2>
+        <div className={styles.error}>{error}</div>
+      </section>
+    );
+  }
+
   return (
     <section className={styles.newsSection} aria-labelledby="news-section-title">
       <h2 id="news-section-title" className={styles.title}>
@@ -52,7 +93,7 @@ const NewsSection = () => {
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
-          loop
+          loop={newsData.length > 1}
           breakpoints={{
             768: {
               slidesPerView: 2,
