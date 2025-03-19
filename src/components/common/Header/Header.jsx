@@ -1,4 +1,3 @@
-// src/components/Header/Header.jsx
 import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
@@ -31,10 +30,14 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} role="banner">
       <div className={styles.topBar}>
         <div className={styles.logo}>
-          <h1><a href="/hp-amamiaman" className={styles.rampart_one_regular}>ヤマハタマリンスポーツあまん</a></h1>
+          <h1>
+            <a href="/hp-amamiaman" className={styles.rampart_one_regular}>
+              ヤマハタマリンスポーツあまん
+            </a>
+          </h1>
         </div>
         <div className={styles.menuButtonContainer}>
           <button
@@ -75,7 +78,7 @@ const Header = () => {
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.dropdownContainer}`}>
-            <Link 
+            <Link
               to="/snorkelling"
               className={styles.dropdownButton}
               onClick={(e) => {
@@ -107,7 +110,7 @@ const Header = () => {
             </ul>
           </li>
           <li className={`${styles.navItem} ${styles.dropdownContainer}`}>
-            <Link 
+            <Link
               to="/lodging"
               className={styles.dropdownButton}
               onClick={(e) => {

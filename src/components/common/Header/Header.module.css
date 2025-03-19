@@ -1,18 +1,4 @@
-/* ヘッダーコンポーネントのスタイル */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Rampart+One&display=swap');
-
-.noto_sans_jp_400 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.rampart_one_regular {
-  font-family: "Rampart One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 /* ヘッダー全体のベースレイアウト */
 .header {
