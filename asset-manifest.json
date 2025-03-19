@@ -1,29 +1,35 @@
 {
   "files": {
-    "main.css": "/hp-amamiaman/static/css/main.a57977a9.css",
-    "main.js": "/hp-amamiaman/static/js/main.d7565b5a.js",
+    "main.css": "/hp-amamiaman/static/css/main.aee02f0d.css",
+    "main.js": "/hp-amamiaman/static/js/main.9bff656b.js",
+    "static/media/slide4.jpg": "/hp-amamiaman/static/media/slide4.da3ac471f4488540e812.jpg",
     "static/media/912.jpg": "/hp-amamiaman/static/media/912.4756cf1feff63bbc6240.jpg",
     "static/media/top.JPG": "/hp-amamiaman/static/media/top.0bfe88bbfba04d477624.JPG",
     "static/media/LodgingGridItem2.jpg": "/hp-amamiaman/static/media/LodgingGridItem2.49d806a190e3008e4e81.jpg",
+    "static/media/slide5.jpg": "/hp-amamiaman/static/media/slide5.e21261b578b79a7e6a69.jpg",
     "static/media/top.jpg": "/hp-amamiaman/static/media/top.c161bf1353dcf289af75.jpg",
     "static/media/IMG_0808.jpg": "/hp-amamiaman/static/media/IMG_0808.b62975936d4b9ae3d3ef.jpg",
     "static/media/IMG_0806.jpg": "/hp-amamiaman/static/media/IMG_0806.60ae7b1ec8eff4235d4a.jpg",
+    "static/media/slide6.jpg": "/hp-amamiaman/static/media/slide6.6c3af13b02ac3e7dffc2.jpg",
     "static/media/IMG_0804.jpg": "/hp-amamiaman/static/media/IMG_0804.f0238e47fec2cd96dd54.jpg",
     "static/media/IMG_0810.jpg": "/hp-amamiaman/static/media/IMG_0810.2b247e30563cb0009b48.jpg",
     "static/media/IMG_0801.jpg": "/hp-amamiaman/static/media/IMG_0801.91e87b7055cc9328e641.jpg",
     "static/media/シャワー室.jpg": "/hp-amamiaman/static/media/シャワー室.f704fd2f19169411d8d5.jpg",
+    "static/media/slide2.jpg": "/hp-amamiaman/static/media/slide2.7f0bb11b2b58cb2a2cdd.jpg",
+    "static/media/slide1.jpg": "/hp-amamiaman/static/media/slide1.1b8bceea58af526d8996.jpg",
     "static/media/ロビー.jpg": "/hp-amamiaman/static/media/ロビー.81cde7bf473295c760b0.jpg",
     "static/media/IMG_0798.jpg": "/hp-amamiaman/static/media/IMG_0798.80473672dca177f913b5.jpg",
+    "static/media/slide3.jpg": "/hp-amamiaman/static/media/slide3.7fe5cf793d1fc21cee50.jpg",
     "static/media/seakayak.svg": "/hp-amamiaman/static/media/seakayak.37b196b363c1e4819ec12ae7a0b0cad7.svg",
     "static/media/Snorkelling.svg": "/hp-amamiaman/static/media/Snorkelling.f5bdfffc323a7a17545f518a5f639a3a.svg",
     "static/media/boat.svg": "/hp-amamiaman/static/media/boat.a5d3258b918525cd833f3d2243c2c901.svg",
     "static/media/lodging.svg": "/hp-amamiaman/static/media/lodging.b2a5824fba0ca5baa0bb7b4a70422aad.svg",
     "index.html": "/hp-amamiaman/index.html",
-    "main.a57977a9.css.map": "/hp-amamiaman/static/css/main.a57977a9.css.map",
-    "main.d7565b5a.js.map": "/hp-amamiaman/static/js/main.d7565b5a.js.map"
+    "main.aee02f0d.css.map": "/hp-amamiaman/static/css/main.aee02f0d.css.map",
+    "main.9bff656b.js.map": "/hp-amamiaman/static/js/main.9bff656b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a57977a9.css",
-    "static/js/main.d7565b5a.js"
+    "static/css/main.aee02f0d.css",
+    "static/js/main.9bff656b.js"
   ]
 }
