@@ -1,6 +1,7 @@
 // App.js
 import './Font.css';
 import './App.css';
+import './styles/global.css';
 
 import {React} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';

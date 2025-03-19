@@ -1,21 +1,13 @@
-// src/components/OurPassion/OurPassionPage.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './OurPassionPage.module.css';
 import SocialShare from '../../components/common/SocialShare/SocialShare';
 
-// 画像をインポート
 import passionImage1 from '../../assets/images/IMG_0810.jpg';
 import passionImage2 from '../../assets/images/912.jpg';
 import passionImage3 from '../../assets/images/IMG_0798.jpg';
 
-/**
- * OurPassionPage コンポーネント
- *
- * 当店の情熱を紹介するページ。複数の情熱ブロックを表示し、各ブロックはタイトル、内容、画像を含む。
- */
 const OurPassionPage = () => {
-  // 情熱ブロックのデータを配列として定義
   const passionBlocks = [
     {
       id: 1,
@@ -43,7 +35,6 @@ const OurPassionPage = () => {
     },
   ];
 
-  // アニメーションのバリアントを定義（フェードインとスライドアップ）
   const containerVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i = 1) => ({
@@ -58,7 +49,7 @@ const OurPassionPage = () => {
   };
 
   return (
-    <main className={styles.section}>
+    <main className={styles.section} aria-labelledby="our-passion-heading">
       <div className={styles.container}>
         {passionBlocks.map((block, index) => (
           <motion.section
@@ -69,9 +60,12 @@ const OurPassionPage = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
             variants={containerVariants}
+            aria-labelledby={`passion-block-heading-${block.id}`}
           >
             <div className={styles.textColumn}>
-              <h2 className={styles.heading}>{block.title}</h2>
+              <h2 id={`passion-block-heading-${block.id}`} className={styles.heading}>
+                {block.title}
+              </h2>
               <p className={styles.paragraph}>{block.content}</p>
             </div>
             <figure className={styles.imageColumn}>
