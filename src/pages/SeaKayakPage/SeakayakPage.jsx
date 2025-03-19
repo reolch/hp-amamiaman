@@ -53,16 +53,24 @@ const SeaKayakPage = () => {
 
 
                 <th scope="row">料金（お一人様）</th>
-                <td>大人:6,000円 子ども:4,000円</td>
+                <td>
+                  大人:6,000円 <br />
+                  子ども:4,000円
+                </td>
               </tr>
               <tr>
                 <th scope="row">案内時間</th>
-                <td>午前の部 9:00～12:00</td>
-                
+                <td>
+                  午前の部 <br />
+                  9:00～12:00
+                </td>
               </tr>
               <tr>
                 <th scope="row">&nbsp;</th>
-                <td>午後の部 13:00～16:00</td>
+                <td>
+                  午後の部 <br />
+                  13:00～16:00
+                </td>
               </tr>
             </tbody>
           </table>
