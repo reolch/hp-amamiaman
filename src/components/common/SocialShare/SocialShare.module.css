@@ -1,25 +1,21 @@
-/* ソーシャルシェアボタンのスタイル */
-
-/* モバイルファーストのベーススタイル */
-.social-share__section {
+.socialShareSection {
     margin-top: 50px;
 }
 
-.social-share__container {
+.socialShareContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
 }
 
-.social-share__buttons {
+.socialShareButtons {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* 共通のボタンスタイル */
-.social-share__button {
+.socialShareButton {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -34,34 +30,30 @@
     justify-content: center;
 }
 
-.social-share__icon {
+.socialShareIcon {
     font-size: 1.5rem;
 }
 
-/* SNS別のカラースタイル */
-.social-share__button--instagram {
+.socialShareButtonInstagram {
     background-color: #E4405F;
-    color: white;
 }
 
-.social-share__button--x {
+.socialShareButtonX {
     background-color: #000000;
-    color: white;
 }
 
-.social-share__button--line {
+.socialShareButtonLine {
     background-color: #00c300;
 }
 
-.social-share__button--line:hover,
-.social-share__button--line:focus {
+.socialShareButtonLine:hover,
+.socialShareButtonLine:focus {
     background-color: #009a00;
     transform: translateY(-2px);
 }
 
-/* タブレット以上のレスポンシブ対応 */
 @media (min-width: 768px) {
-    .social-share__buttons {
+    .socialShareButtons {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -69,18 +61,17 @@
     }
 }
 
-/* デスクトップ以上のレスポンシブ対応 */
 @media (min-width: 1024px) {
-    .social-share__section {
+    .socialShareSection {
         margin-top: 60px;
     }
 
-    .social-share__button {
+    .socialShareButton {
         padding: 14px 24px;
         font-size: 1.1rem;
     }
 
-    .social-share__icon {
+    .socialShareIcon {
         font-size: 1.5rem;
     }
 }
