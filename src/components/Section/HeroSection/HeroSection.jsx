@@ -2,40 +2,47 @@
 import React, { useState, useEffect } from 'react';
 import styles from './HeroSection.module.css'; // CSS Module をインポート
 
+import slide1 from '../../../assets/images/pages/トップページ/スライドショー/slide1.jpg'
+import slide2 from '../../../assets/images/pages/トップページ/スライドショー/slide2.jpg'
+import slide3 from '../../../assets/images/pages/トップページ/スライドショー/slide3.jpg'
+import slide4 from '../../../assets/images/pages/トップページ/スライドショー/slide4.jpg'
+import slide5 from '../../../assets/images/pages/トップページ/スライドショー/slide5.jpg'
+import slide6 from '../../../assets/images/pages/トップページ/スライドショー/slide6.jpg'
+
 const slides = [
   {
     id: 1,
-    url: process.env.PUBLIC_URL + '/slide1.jpg',
+    image: slide1,
     catchphrase: '',
     description: '',
   },
   {
     id: 2,
-    url: process.env.PUBLIC_URL + '/slide2.jpg',
+    image: slide2,
     catchphrase: '',
     description: '',
   },
   {
     id: 3,
-    url: process.env.PUBLIC_URL + '/slide3.jpg',
+    image: slide3,
     catchphrase: '',
     description: '',
   },
   {
     id: 4,
-    url: process.env.PUBLIC_URL + '/slide4.jpg',
+    image: slide4,
     catchphrase: '',
     description: '',
   },
   {
     id: 5,
-    url: process.env.PUBLIC_URL + '/正面外観.jpg',
+    image: slide5,
     catchphrase: '',
     description: '',
   },
   {
     id: 6,
-    url: process.env.PUBLIC_URL + '/宿泊施設.jpg',
+    image: slide6,
     catchphrase: '',
     description: '',
   }
@@ -75,7 +82,7 @@ const HeroSection = ({ animationType = 'fade' }) => {
             aria-hidden={index !== currentSlide}
           >
             <img
-              src={slide.url}
+              src={slide.image}
               alt={slide.catchphrase}
               className={styles['hero-section__slide-image']}
               loading="lazy"
