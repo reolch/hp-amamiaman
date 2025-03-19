@@ -1,4 +1,3 @@
-// src/components/Section/AboutSection/AboutSection.jsx
 import React, { useEffect, useRef } from 'react';
 import styles from './AboutSection.module.css';
 
@@ -38,9 +37,9 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className={styles.section} ref={sectionRef}>
+    <section className={styles.section} ref={sectionRef} aria-labelledby="about-section-heading">
       <div className={styles.content} ref={contentRef}>
-        <h2>
+        <h2 id="about-section-heading">
           大自然で子どもから大人まで<br />
           マリンスポーツを楽しめる！
         </h2>
