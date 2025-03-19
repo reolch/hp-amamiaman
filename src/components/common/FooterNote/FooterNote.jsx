@@ -1,10 +1,11 @@
-// src/components/GlassBoatPage/FooterNote.jsx
 import React from 'react';
-import styles from './FooterNote.module.css'; // CSS Modulesをインポート
+import styles from './FooterNote.module.css';
 
 const FooterNote = () => {
     return (
-        <p className={styles['footer-note__text']}>表記価格は税込です。</p>
+        <p className={styles['footer-note__text']} role="note" aria-label="価格に関する注意事項">
+            表記価格は税込です。
+        </p>
     );
 };
 
