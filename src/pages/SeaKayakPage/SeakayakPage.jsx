@@ -11,7 +11,7 @@ const SeaKayakPage = () => {
       <div className={styles.container}>
         {/* ページタイトル */}
         <h1 id="sea-kayak-heading" className={styles.title}>
-          奄美のシーカヤックツアー
+          シーカヤックツアー
         </h1>
 
         {/* コンテンツブロック */}
@@ -31,9 +31,7 @@ const SeaKayakPage = () => {
               <br />
               サンゴ礁の海を滑るように進むシーカヤックは最高です！
               <br />
-              シーカヤックを漕いで行き、美しいビーチで
-              <br className={styles.desktopOnly} />
-              シュノーケリングを楽しむこともできます。
+              シーカヤックを漕いで行き、美しいビーチで一休み。
               <br />
               運が良ければウミガメを見ることができます。
             </p>
@@ -59,12 +57,12 @@ const SeaKayakPage = () => {
               </tr>
               <tr>
                 <th scope="row">案内時間</th>
-                <td>9:00～12:00</td>
+                <td>午前の部 9:00～12:00</td>
                 
               </tr>
               <tr>
                 <th scope="row">&nbsp;</th>
-                <td>13:00～16:00</td>
+                <td>午後の部 13:00～16:00</td>
               </tr>
             </tbody>
           </table>
@@ -76,7 +74,7 @@ const SeaKayakPage = () => {
             <tbody>
               <tr>
                 <th className={styles.label} scope="row">用意する物</th>
-                <td className={styles.value}>水着・タオル</td>
+                <td className={styles.value}>濡れてもいい服装・タオルなど</td>
               </tr>
               <tr>
                 <th className={styles.label} scope="row" rowSpan={7}>
@@ -105,7 +103,7 @@ const SeaKayakPage = () => {
               <tr>
                 <th className={styles.label} scope="row">備考</th>
                 <td className={styles.value}>
-                  必要な方は日焼け止めなどもご用意ください。<br />
+                  水分補給など熱中症対策は十分に行ってください。<br />
                   乗降時には膝下まで水につかります。<br />
                   ご予約はメールまたは電話にて受付けています。<br />
                 </td>

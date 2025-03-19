@@ -13,7 +13,7 @@ const SnorkellingPage = () => {
     <main className={styles.section} aria-labelledby="snorkelling-heading">
       <div className={styles.container}>
         <h1 id="snorkelling-heading" className={styles.title}>
-          奄美のシュノーケリングツアー
+          シュノーケリングツアー
         </h1>
 
         <div className={styles.descriptionContainer}>
@@ -21,10 +21,13 @@ const SnorkellingPage = () => {
             奄美の海でたくさんの魚にふれあえます！
           </p>
           <p className={styles.description}>
-            サンゴ礁や魚をびっくりするほどたくさん見ることができます。
+            サンゴ礁や魚をたくさん見ることができます。
           </p>
           <p className={styles.description}>
-            モーターボートでポイントへ移動し、シュノーケリングをたっぷり満喫したい方のための1日コースと、時間を有効に使いたい方のための半日コースをご案内しています。
+            モーターボートでポイントへ移動し、シュノーケリングをたっぷり満喫したい方のための1日コースと、時間を有効に使いたい方のための半日コースを２名様からご案内しています。
+          </p>
+          <p className={styles.description}>
+            （ご希望によりSUPも追加）
           </p>
         </div>
 
@@ -69,12 +72,12 @@ const SnorkellingPage = () => {
               </tr>
               <tr>
                 <th scope="row">案内時間</th>
-                <td>9:00～12:00</td>
-                <td>13:00～16:00</td>
+                <td>午前の部 9:00～12:00</td>
+                <td>午後の部 13:00～16:00</td>
               </tr>
               <tr>
                 <th scope="row">&nbsp;</th>
-                <td>13:00～16:00</td>
+                <td>9:00～16:00</td>
                 <td>&nbsp;</td>
               </tr>
             </tbody>
@@ -112,7 +115,8 @@ const SnorkellingPage = () => {
               <tr>
                 <th className={styles.label} scope="row">備考</th>
                 <td className={styles.value}>
-                  必要な方は日焼け止めなどもご用意ください。ご予約はメールまたはお電話にて受け付けています。
+                  水分補給など熱中症対策は十分に行ってください。
+                  ご予約はメールまたはお電話にて受け付けています。
                 </td>
               </tr>
             </tbody>

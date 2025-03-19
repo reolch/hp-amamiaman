@@ -11,7 +11,7 @@ const LodgingPage = () => {
       <div className={styles.container}>
         {/* ページタイトル */}
         <h1 id="lodging-page-heading" className={styles.title}>
-          奄美の民宿
+          宿泊施設
         </h1>
         <div className={styles.descriptionContainer}>
           <p className={styles.description}>
@@ -19,7 +19,8 @@ const LodgingPage = () => {
             <br />
             お部屋は、和室と洋室をご用意しています。
             <br />
-            タオル類や、冷蔵庫など必要な物はこちらでご用意していますので、お気軽にお越しください。
+            洗濯機、冷蔵庫やタオルなどはご自由にお使いください。
+            WiFi設備も充実しています。
           </p>
         </div>
 
@@ -68,9 +69,6 @@ const LodgingPage = () => {
                 <td className={styles.value}>連絡先</td>
               </tr>
               <tr>
-                <td className={styles.value}>参加人数</td>
-              </tr>
-              <tr>
                 <td className={styles.value}>男性○名、女性○名</td>
               </tr>
               <tr>
@@ -78,9 +76,6 @@ const LodgingPage = () => {
               </tr>
               <tr>
                 <td className={styles.value}>宿泊者全員の年齢</td>
-              </tr>
-              <tr>
-                <td className={styles.value}>経験歴</td>
               </tr>
               <tr>
                 <th className={styles.label}>備考</th>

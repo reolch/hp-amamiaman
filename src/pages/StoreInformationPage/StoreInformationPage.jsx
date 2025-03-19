@@ -64,8 +64,8 @@ const StoreInformationPage = () => {
                 <tr>
                   <th scope="row">メールアドレス</th>
                   <td>
-                    <a href="mailto:info@amamiaman.com" className={styles.link}>
-                      info@amamiaman.com
+                    <a href="mailto:aman36623@yahoo.co.jp" className={styles.link}>
+                      aman36623@yahoo.co.jp
                     </a>
                   </td>
                 </tr>
