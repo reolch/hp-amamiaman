@@ -118,17 +118,17 @@ const Header = () => {
               }}
               aria-expanded={isLodgingDropdownOpen}
             >
-              宿泊施設 ▼
+              施設紹介 ▼
             </Link>
             <ul className={`${styles.dropdownMenu} ${isLodgingDropdownOpen ? styles.show : ''}`}>
               <li>
                 <Link to="/lodging" className={styles.dropdownLink}>
-                  民宿
+                  宿泊施設
                 </Link>
               </li>
               <li>
                 <Link to="/other" className={styles.dropdownLink}>
-                  施設紹介
+                  その他の施設
                 </Link>
               </li>
             </ul>
