@@ -1,6 +1,3 @@
-/* src/components/Section/AccessSection/AccessSection.module.css */
-
-
 .accessSection {
   padding: 60px 20px;
   background-color: var(--background-color);
@@ -30,6 +27,8 @@
   background-color: var(--white-color);
   padding: 30px;
   border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .accessSectionInfoList {
@@ -86,11 +85,9 @@
   width: 100%;
   height: 100%;
   border: none;
+  border-radius: 8px;
 }
 
-/* レスポンシブスタイル */
-
-/* タブレット以上のスタイル */
 @media (min-width: 768px) {
   .accessSectionCardsWrapper {
     flex-direction: row;
@@ -120,7 +117,6 @@
   }
 }
 
-/* デスクトップ以上のスタイル */
 @media (min-width: 1024px) {
   .accessSectionMapContainer {
     height: 100%;

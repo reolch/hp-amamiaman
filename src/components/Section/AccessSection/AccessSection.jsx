@@ -1,4 +1,3 @@
-// src/components/Section/AccessSection/AccessSection.jsx
 import React from 'react';
 import styles from './AccessSection.module.css';
 import {
@@ -12,16 +11,14 @@ import {
 
 const AccessSection = () => {
   return (
-    <section id="access" className={styles.accessSection}>
+    <section id="access" className={styles.accessSection} aria-labelledby="access-section-heading">
       <div className={styles.accessSectionContainer}>
-        <h2 className={styles.accessSectionTitle}>アクセス</h2>
+        <h2 id="access-section-heading" className={styles.accessSectionTitle}>アクセス</h2>
         <div className={styles.accessSectionCardsWrapper}>
-          {/* アクセス情報カード */}
           <div className={styles.accessSectionInfoCard}>
             <div className={styles.accessSectionInfoList}>
-              {/* 各情報項目 */}
               <div className={styles.accessSectionInfoItem}>
-                <FaMapMarkerAlt className={styles.accessSectionIcon} />
+                <FaMapMarkerAlt className={styles.accessSectionIcon} aria-hidden="true" />
                 <div className={styles.accessSectionInfoText}>
                   <h3 className={styles.accessSectionInfoTitle}>住所</h3>
                   <p className={styles.accessSectionInfoDescription}>
@@ -33,7 +30,7 @@ const AccessSection = () => {
               </div>
 
               <div className={styles.accessSectionInfoItem}>
-                <FaPhone className={styles.accessSectionIcon} />
+                <FaPhone className={styles.accessSectionIcon} aria-hidden="true" />
                 <div className={styles.accessSectionInfoText}>
                   <h3 className={styles.accessSectionInfoTitle}>電話番号</h3>
                   <p className={styles.accessSectionInfoDescription}>
@@ -43,7 +40,7 @@ const AccessSection = () => {
               </div>
 
               <div className={styles.accessSectionInfoItem}>
-                <FaFax className={styles.accessSectionIcon} />
+                <FaFax className={styles.accessSectionIcon} aria-hidden="true" />
                 <div className={styles.accessSectionInfoText}>
                   <h3 className={styles.accessSectionInfoTitle}>FAX番号</h3>
                   <p className={styles.accessSectionInfoDescription}>
@@ -53,7 +50,7 @@ const AccessSection = () => {
               </div>
 
               <div className={styles.accessSectionInfoItem}>
-                <FaClock className={styles.accessSectionIcon} />
+                <FaClock className={styles.accessSectionIcon} aria-hidden="true" />
                 <div className={styles.accessSectionInfoText}>
                   <h3 className={styles.accessSectionInfoTitle}>営業時間</h3>
                   <p className={styles.accessSectionInfoDescription}>
@@ -63,7 +60,7 @@ const AccessSection = () => {
               </div>
 
               <div className={styles.accessSectionInfoItem}>
-                <FaParking className={styles.accessSectionIcon} />
+                <FaParking className={styles.accessSectionIcon} aria-hidden="true" />
                 <div className={styles.accessSectionInfoText}>
                   <h3 className={styles.accessSectionInfoTitle}>駐車場</h3>
                   <p className={styles.accessSectionInfoDescription}>
@@ -73,7 +70,7 @@ const AccessSection = () => {
               </div>
 
               <div className={styles.accessSectionInfoItem}>
-                <FaDirections className={styles.accessSectionIcon} />
+                <FaDirections className={styles.accessSectionIcon} aria-hidden="true" />
                 <div className={styles.accessSectionInfoText}>
                   <h3 className={styles.accessSectionInfoTitle}>アクセス</h3>
                   <p className={styles.accessSectionInfoDescription}>
@@ -83,7 +80,7 @@ const AccessSection = () => {
               </div>
             </div>
           </div>
-          {/* 地図カード */}
+
           <div className={styles.accessSectionMapCard}>
             <div className={styles.accessSectionMapContainer}>
               <iframe
@@ -92,6 +89,7 @@ const AccessSection = () => {
                 allowFullScreen
                 loading="lazy"
                 title="店舗の地図"
+                aria-label="店舗の地図"
               ></iframe>
             </div>
           </div>
