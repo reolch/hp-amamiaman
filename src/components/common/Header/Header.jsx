@@ -35,7 +35,7 @@ const Header = () => {
         <div className={styles.logo}>
           <h1>
             <a href="/hp-amamiaman" className={styles.rampart_one_regular}>
-              ヤマハタマリンスポーツあまん
+              ヤマハタマリンサービスあまん
             </a>
           </h1>
         </div>

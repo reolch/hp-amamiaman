@@ -83,13 +83,15 @@ const SnorkellingPage = () => {
                   9:00～12:00
                 </td>
                 <td>
-                  午後の部 <br />
-                  13:00～16:00
+                  9:00～16:00
                 </td>
               </tr>
               <tr>
                 <th scope="row">&nbsp;</th>
-                <td>9:00～16:00</td>
+                <td>
+                  午後の部 <br />
+                  13:00～16:00
+                </td>
                 <td>&nbsp;</td>
               </tr>
             </tbody>
