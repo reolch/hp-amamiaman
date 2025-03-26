@@ -23,7 +23,7 @@ import OtherFacilitiesPage from './pages/OtherFacilities/OtherFacilitiesPage';
 
 function App() {
   return (
-    <Router basename='/hp-amamiaman'>
+    <Router>
       <div className='wrapper'>
         <Header />
           <Routes>
